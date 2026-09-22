@@ -4,6 +4,8 @@ This repository is an auditable research artifact for one bounded study: after
 correcting the RoBERTa input pipeline, how do training budget and
 parameterization affect MRPC performance and zero-shot behavior on PAWS-Wiki?
 
+[Public evidence audit](https://github.com/Zhi-Chao-PAN/lora-robustness-reproduction/actions/workflows/public-audit.yml) checks the published file hashes and aggregate evidence on every push.
+
 The study covers an 18-run primary matrix (classification head, full fine
 tuning, and query/value LoRA-r8; 4 and 12 epochs; seeds 42, 123, and 456), two
 single-seed rank diagnostics, and one deterministic repeat. It is a controlled

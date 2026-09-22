@@ -1,0 +1,22 @@
+name: Public evidence audit
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Verify published file hashes
+        run: sha256sum -c SHA256SUMS
+      - name: Recompute public aggregate checks
+        run: python verify_public_bundle.py
