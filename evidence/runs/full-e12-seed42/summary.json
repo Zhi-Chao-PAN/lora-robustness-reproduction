@@ -1,0 +1,41 @@
+{
+  "status": "COMPLETE",
+  "method": "full",
+  "seed": 42,
+  "epochs": 12,
+  "metrics": {
+    "accuracy": 0.8799019607843137,
+    "binary_f1": 0.9117117117117117
+  },
+  "selected_epoch": 9,
+  "selected_internal_dev": {
+    "binary_f1": 0.8975124378109453,
+    "accuracy": 0.8596730245231607
+  },
+  "restored_development_metrics": {
+    "accuracy": 0.8596730245231607,
+    "binary_f1": 0.8975124378109453
+  },
+  "selected_model_training_metrics": {
+    "accuracy": 0.9986366734832992,
+    "binary_f1": 0.9989888776541962
+  },
+  "correct_tokenizer_guard_passed": true,
+  "trainable_parameters": 124647170,
+  "total_parameters": 124647170,
+  "trainable_fraction": 1.0,
+  "peak_torch_cuda_allocated_bytes": 2871572992,
+  "wall_seconds": 387.1949612710014,
+  "training_and_dev_seconds": 369.85267761400246,
+  "frozen_feature_preparation_seconds": 0.0,
+  "frozen_parameter_hash_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "frozen_parameter_hash_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "initial_classifier_sha256": "eb9fb5d9fa8ff72f2c7a4464bfcbb63e228c944fb9c8abf01ccb2b3a40517b45",
+  "best_checkpoint_sha256": "9c0f1db45976cfc8e33ceb3018f1cce2799eb7b73f01ed81459e75a3069fd5b7",
+  "prediction_sha256": "d87ed30539ea2a42dad30743a595f7d128f4f4a464e3507e4dac8c1faa5e162c",
+  "checkpoint_restore_predictions_equal": true,
+  "checkpoint_restore_max_logit_abs_error": 0.0,
+  "validation_rows": 408,
+  "test_evaluated": false,
+  "protocol_sha256": "4d4222ab05d6642b1b2405ea1cba50da5b0ff384028f79965d3b5055d9870974"
+}

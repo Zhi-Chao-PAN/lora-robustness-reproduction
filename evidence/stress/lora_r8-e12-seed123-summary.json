@@ -1,0 +1,24 @@
+{
+  "run": "lora_r8-e12-seed123",
+  "method": "lora_r8",
+  "seed": 123,
+  "checkpoint_sha256": "2a105b6ef08fa9439201edecf9d746be5ccb3325c5a18c042edf586538ddde1c",
+  "selected_mrpc_dev_epoch": 9,
+  "status": "COMPLETE",
+  "split": "PAWS-Wiki labeled_final public test",
+  "rows": 8000,
+  "metrics": {
+    "accuracy": 0.44275,
+    "binary_f1": 0.6130880055545912,
+    "balanced_accuracy": 0.5005544608248593,
+    "mcc": 0.013176207112535952,
+    "negative_recall": 0.002240143369175627,
+    "positive_recall": 0.998868778280543
+  },
+  "prediction_sha256": "6f84a2a1869a28ed3a4ecbe072fb9672d8ab5a81a135797378e84d26b76dd0f0",
+  "data_sha256": "ae342ff12bb84b84b95f468abf5db6cb7c7bd578271299fe9c99be75b8132f4d",
+  "evaluator_sha256": "b0de9bc567ddf4d4ab4d7c8eb7ff22e053ec5feda7bd9fd7caa33c8bc85d5413",
+  "selection": "Frozen before stress inference; MRPC internal development only",
+  "no_paws_training": true,
+  "wall_seconds": 18.418715451000025
+}

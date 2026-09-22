@@ -1,0 +1,13 @@
+# Publication-time source and input checks (2026-09-23)
+
+The public bundle was checked separately from the original training runs. `verify_public_bundle.py` passed with 21 completed run summaries, six PAWS stress summaries, and the four headline aggregate metrics recomputed from included summaries. `sha256sum -c SHA256SUMS` passed for every included file. All ten documented command-line scripts accepted `--help` in the pinned Python 3.12 environment.
+
+We additionally ran the **published source files** against the retained original input assets, without copying those assets into this repository:
+
+| Check | Result | Scope |
+|---|---|---|
+| `audit_tokenization.py` | `PASS`; 3,668 train and 408 validation encodings all matched the raw `tokenizer.json`; the legacy backend had zero BPE merges and the corrected backend had 50,000 | Input correctness on the retained MRPC snapshot |
+| `check_implementation.py` | `PASS`; 24 query/value projections adapted, 887,042 trainable LoRA-r8 parameters including the classifier; zero-adapter logits matched and base weights remained frozen | Implementation invariants on the retained pretrained model |
+| `verify_public_bundle.py` | `PASS`; 21/21 run summaries, six PAWS stress summaries, no prohibited source rows or model assets in the public package | Aggregate-record and package audit, **not** raw prediction recomputation |
+
+This publication-time check did **not** retrain the 21 runs or independently download every upstream asset from the public README. The detailed frozen-result verification remains in the original local evidence package. Training outcomes depend on the recorded environment and data snapshot; a reviewer can attempt a fresh run with the README commands and upstream terms.

@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "pretrained_backbone_parameter_tensors_matched": 197,
+  "missing": [],
+  "different": []
+}

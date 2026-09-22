@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "rows": 8000,
+  "unique_source_ids": 8000,
+  "ids_are_source_id_not_dataframe_row_index": true,
+  "raw_asset_and_transformers_all_row_input_ids_and_masks_equal": true,
+  "untruncated_token_lengths": {
+    "minimum": 18,
+    "median": 54.0,
+    "maximum": 130,
+    "over_128_count": 2
+  },
+  "normalized_unordered_exact_pair_overlap_with_mrpc": {
+    "train": 0,
+    "validation": 0
+  },
+  "label_counts": {
+    "0": 4464,
+    "1": 3536
+  },
+  "data_sha256": "ae342ff12bb84b84b95f468abf5db6cb7c7bd578271299fe9c99be75b8132f4d",
+  "script_sha256": "6755ff95e8e8da18737de06edc714e933e631a02386725cbe069d09c118b579c",
+  "scope": "Equality checks preprocessing only; PAWS labels never select MRPC checkpoints."
+}

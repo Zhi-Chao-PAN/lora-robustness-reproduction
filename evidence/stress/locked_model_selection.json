@@ -1,0 +1,44 @@
+[
+  {
+    "run": "full-e12-seed42",
+    "method": "full",
+    "seed": 42,
+    "checkpoint_sha256": "9c0f1db45976cfc8e33ceb3018f1cce2799eb7b73f01ed81459e75a3069fd5b7",
+    "selected_mrpc_dev_epoch": 9
+  },
+  {
+    "run": "lora_r8-e12-seed42",
+    "method": "lora_r8",
+    "seed": 42,
+    "checkpoint_sha256": "31281dd6bebba9e2a4c68f4b4a8619b60b96301215782325c86c96dcde628825",
+    "selected_mrpc_dev_epoch": 9
+  },
+  {
+    "run": "full-e12-seed123",
+    "method": "full",
+    "seed": 123,
+    "checkpoint_sha256": "c8418d3de4288c5cd6ab275e4a4b75c3bd1d703c01bb0ea70b368433ba9531d0",
+    "selected_mrpc_dev_epoch": 11
+  },
+  {
+    "run": "lora_r8-e12-seed123",
+    "method": "lora_r8",
+    "seed": 123,
+    "checkpoint_sha256": "2a105b6ef08fa9439201edecf9d746be5ccb3325c5a18c042edf586538ddde1c",
+    "selected_mrpc_dev_epoch": 9
+  },
+  {
+    "run": "full-e12-seed456",
+    "method": "full",
+    "seed": 456,
+    "checkpoint_sha256": "9e1b8fcc0324879f19d49a18b0a10776b531cb88ad14814b206a39ac69b1aaf2",
+    "selected_mrpc_dev_epoch": 5
+  },
+  {
+    "run": "lora_r8-e12-seed456",
+    "method": "lora_r8",
+    "seed": 456,
+    "checkpoint_sha256": "4b9d3310bd885b9ecf8290d3038f841b63d0f723ec0ff65daac749556dc0bd88",
+    "selected_mrpc_dev_epoch": 12
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "names": [
+    "classifier.dense.weight",
+    "classifier.dense.bias",
+    "classifier.out_proj.weight",
+    "classifier.out_proj.bias"
+  ],
+  "trainable": 592130,
+  "total": 124647170,
+  "initial_head_sha256": "a74049cc1ccd93e7dd73f6a09cce85b20424d6534324259cc61b013ca8b0a7c0"
+}

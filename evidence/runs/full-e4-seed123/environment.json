@@ -1,0 +1,24 @@
+{
+  "python": "3.12.14 (main, Aug 14 2026, 15:34:45) [Clang 22.1.3 ]",
+  "torch": "2.13.0+cu130",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "cuda_memory_fraction": 0.7,
+  "packages": {
+    "transformers": "5.15.1",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "pyarrow": "24.0.0",
+    "scikit-learn": "1.9.0",
+    "safetensors": "0.8.0"
+  },
+  "source_sha256": {
+    "run_experiment.py": "9fbb40667f46e16baefae665ea7255ca3da181edf69f7456804954ebd7fa677d",
+    "protocol.json": "4d4222ab05d6642b1b2405ea1cba50da5b0ff384028f79965d3b5055d9870974",
+    "tokenization.py": "d1416c423f2581aacc9613c4727a9a4debe1d7fbfc2e3384f034ccfd50bbd55c",
+    "vendor/loralib/__init__.py": "df9ca7e519d0bbe03679eac45ed00d9b99d0434d106dcdd2b600765b99192027",
+    "vendor/loralib/layers.py": "ea9fa6bd0930dfbf5af08440f6c71aeab3408cf07d3cca7620c86c45ea730797",
+    "vendor/loralib/utils.py": "9cd157527f79d48cf6f5feb7eb87509696e5f3cbb38862a633239e464eacaa71"
+  },
+  "asset_manifest_sha256": "265c6942b8b5419bb7bef0517eb7733950e03754052d8e2ce42374d5bcb8a906"
+}

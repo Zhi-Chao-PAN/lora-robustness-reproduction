@@ -1,0 +1,42 @@
+{
+  "status": "PASS_FOR_EXPORTED_EVIDENCE",
+  "counts": {
+    "validation_predictions_verified": 8568,
+    "dev_predictions_verified": 15414,
+    "paws_predictions_verified": 48000
+  },
+  "expected_counts": {
+    "validation": 8568,
+    "dev": 15414,
+    "paws": 48000
+  },
+  "errors": [],
+  "evidence": {
+    "full_weight_bytes_not_in_export": [
+      "full-e4-seed42",
+      "full-e4-seed123",
+      "full-e4-seed456",
+      "full-e12-seed42",
+      "full-e12-seed123",
+      "full-e12-seed456"
+    ],
+    "small_weight_sha_verified": [
+      "head-e4-seed42",
+      "lora_r8-e4-seed42",
+      "head-e4-seed123",
+      "lora_r8-e4-seed123",
+      "head-e4-seed456",
+      "lora_r8-e4-seed456",
+      "head-e12-seed42",
+      "lora_r8-e12-seed42",
+      "head-e12-seed123",
+      "lora_r8-e12-seed123",
+      "head-e12-seed456",
+      "lora_r8-e12-seed456",
+      "lora_r2-e12-seed42",
+      "lora_r16-e12-seed42",
+      "lora_r8-e4-seed42-repeat"
+    ]
+  },
+  "scope": "Exported predictions and exported small weights only; no model loading, training rerun, or full-weight byte verification."
+}

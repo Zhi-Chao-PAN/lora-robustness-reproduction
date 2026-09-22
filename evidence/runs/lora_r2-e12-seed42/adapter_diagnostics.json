@@ -1,0 +1,242 @@
+[
+  {
+    "module": "roberta.encoder.layer.0.attention.self.query",
+    "singular_values": [
+      0.4925258755683899,
+      0.38174790143966675
+    ],
+    "base_frobenius_norm": 78.21658325195312,
+    "update_frobenius_norm": 0.6231478452682495,
+    "relative_update_norm": 0.007966953034255547
+  },
+  {
+    "module": "roberta.encoder.layer.0.attention.self.value",
+    "singular_values": [
+      0.775443434715271,
+      0.20519089698791504
+    ],
+    "base_frobenius_norm": 29.267288208007812,
+    "update_frobenius_norm": 0.8021320104598999,
+    "relative_update_norm": 0.027407117624257
+  },
+  {
+    "module": "roberta.encoder.layer.1.attention.self.query",
+    "singular_values": [
+      0.9223695397377014,
+      0.208633154630661
+    ],
+    "base_frobenius_norm": 57.524681091308594,
+    "update_frobenius_norm": 0.9456708431243896,
+    "relative_update_norm": 0.01643939306022978
+  },
+  {
+    "module": "roberta.encoder.layer.1.attention.self.value",
+    "singular_values": [
+      0.6725366711616516,
+      0.1271810382604599
+    ],
+    "base_frobenius_norm": 32.14059829711914,
+    "update_frobenius_norm": 0.6844564080238342,
+    "relative_update_norm": 0.021295695920047143
+  },
+  {
+    "module": "roberta.encoder.layer.2.attention.self.query",
+    "singular_values": [
+      0.7875698208808899,
+      0.18128307163715363
+    ],
+    "base_frobenius_norm": 52.05669021606445,
+    "update_frobenius_norm": 0.8081644177436829,
+    "relative_update_norm": 0.015524698446815335
+  },
+  {
+    "module": "roberta.encoder.layer.2.attention.self.value",
+    "singular_values": [
+      0.670911431312561,
+      0.11418601125478745
+    ],
+    "base_frobenius_norm": 35.421722412109375,
+    "update_frobenius_norm": 0.6805590391159058,
+    "relative_update_norm": 0.019213041963291086
+  },
+  {
+    "module": "roberta.encoder.layer.3.attention.self.query",
+    "singular_values": [
+      0.9523032307624817,
+      0.08934736996889114
+    ],
+    "base_frobenius_norm": 55.021907806396484,
+    "update_frobenius_norm": 0.9564854502677917,
+    "relative_update_norm": 0.017383720201657512
+  },
+  {
+    "module": "roberta.encoder.layer.3.attention.self.value",
+    "singular_values": [
+      0.5941388607025146,
+      0.25885048508644104
+    ],
+    "base_frobenius_norm": 36.09943389892578,
+    "update_frobenius_norm": 0.6480776071548462,
+    "relative_update_norm": 0.017952569809526326
+  },
+  {
+    "module": "roberta.encoder.layer.4.attention.self.query",
+    "singular_values": [
+      1.2048207521438599,
+      0.2814563512802124
+    ],
+    "base_frobenius_norm": 56.160057067871094,
+    "update_frobenius_norm": 1.2372593879699707,
+    "relative_update_norm": 0.022030949620914845
+  },
+  {
+    "module": "roberta.encoder.layer.4.attention.self.value",
+    "singular_values": [
+      0.7979391813278198,
+      0.06269602477550507
+    ],
+    "base_frobenius_norm": 36.87297058105469,
+    "update_frobenius_norm": 0.8003984689712524,
+    "relative_update_norm": 0.021706915834508237
+  },
+  {
+    "module": "roberta.encoder.layer.5.attention.self.query",
+    "singular_values": [
+      1.3358123302459717,
+      0.06413647532463074
+    ],
+    "base_frobenius_norm": 52.92494583129883,
+    "update_frobenius_norm": 1.3373510837554932,
+    "relative_update_norm": 0.025268822910435716
+  },
+  {
+    "module": "roberta.encoder.layer.5.attention.self.value",
+    "singular_values": [
+      0.9510345458984375,
+      0.3462859094142914
+    ],
+    "base_frobenius_norm": 39.5156135559082,
+    "update_frobenius_norm": 1.0121169090270996,
+    "relative_update_norm": 0.025613088547774106
+  },
+  {
+    "module": "roberta.encoder.layer.6.attention.self.query",
+    "singular_values": [
+      1.5797991752624512,
+      0.1394011378288269
+    ],
+    "base_frobenius_norm": 52.910011291503906,
+    "update_frobenius_norm": 1.5859376192092896,
+    "relative_update_norm": 0.029974244580513888
+  },
+  {
+    "module": "roberta.encoder.layer.6.attention.self.value",
+    "singular_values": [
+      0.915719211101532,
+      0.06332676112651825
+    ],
+    "base_frobenius_norm": 38.65964126586914,
+    "update_frobenius_norm": 0.9179062843322754,
+    "relative_update_norm": 0.02374326957717152
+  },
+  {
+    "module": "roberta.encoder.layer.7.attention.self.query",
+    "singular_values": [
+      2.437770366668701,
+      0.08845555782318115
+    ],
+    "base_frobenius_norm": 56.85673904418945,
+    "update_frobenius_norm": 2.4393746852874756,
+    "relative_update_norm": 0.042903879580423646
+  },
+  {
+    "module": "roberta.encoder.layer.7.attention.self.value",
+    "singular_values": [
+      1.0155590772628784,
+      0.11542977392673492
+    ],
+    "base_frobenius_norm": 32.952884674072266,
+    "update_frobenius_norm": 1.0220979452133179,
+    "relative_update_norm": 0.03101694905689143
+  },
+  {
+    "module": "roberta.encoder.layer.8.attention.self.query",
+    "singular_values": [
+      1.3300671577453613,
+      0.09609556943178177
+    ],
+    "base_frobenius_norm": 51.99591827392578,
+    "update_frobenius_norm": 1.3335340023040771,
+    "relative_update_norm": 0.025646897806068752
+  },
+  {
+    "module": "roberta.encoder.layer.8.attention.self.value",
+    "singular_values": [
+      0.8575087189674377,
+      0.07599253207445145
+    ],
+    "base_frobenius_norm": 34.074684143066406,
+    "update_frobenius_norm": 0.8608693480491638,
+    "relative_update_norm": 0.025264191575032853
+  },
+  {
+    "module": "roberta.encoder.layer.9.attention.self.query",
+    "singular_values": [
+      1.5359656810760498,
+      0.0786762535572052
+    ],
+    "base_frobenius_norm": 50.75232696533203,
+    "update_frobenius_norm": 1.5379793643951416,
+    "relative_update_norm": 0.030303622638735494
+  },
+  {
+    "module": "roberta.encoder.layer.9.attention.self.value",
+    "singular_values": [
+      0.7951202392578125,
+      0.08411861211061478
+    ],
+    "base_frobenius_norm": 31.945758819580078,
+    "update_frobenius_norm": 0.7995575070381165,
+    "relative_update_norm": 0.02502859648924835
+  },
+  {
+    "module": "roberta.encoder.layer.10.attention.self.query",
+    "singular_values": [
+      1.6953706741333008,
+      0.04453565180301666
+    ],
+    "base_frobenius_norm": 51.34883499145508,
+    "update_frobenius_norm": 1.695955514907837,
+    "relative_update_norm": 0.033028120602737326
+  },
+  {
+    "module": "roberta.encoder.layer.10.attention.self.value",
+    "singular_values": [
+      1.1740812063217163,
+      0.23340921103954315
+    ],
+    "base_frobenius_norm": 31.8414249420166,
+    "update_frobenius_norm": 1.1970574855804443,
+    "relative_update_norm": 0.037594344089823
+  },
+  {
+    "module": "roberta.encoder.layer.11.attention.self.query",
+    "singular_values": [
+      2.0444796085357666,
+      0.03862203285098076
+    ],
+    "base_frobenius_norm": 52.4321403503418,
+    "update_frobenius_norm": 2.044844388961792,
+    "relative_update_norm": 0.03899982673410856
+  },
+  {
+    "module": "roberta.encoder.layer.11.attention.self.value",
+    "singular_values": [
+      1.121655821800232,
+      0.1267266571521759
+    ],
+    "base_frobenius_norm": 35.87159729003906,
+    "update_frobenius_norm": 1.1287920475006104,
+    "relative_update_norm": 0.03146757135941802
+  }
+]

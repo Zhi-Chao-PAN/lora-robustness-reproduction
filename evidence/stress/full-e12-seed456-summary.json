@@ -1,0 +1,24 @@
+{
+  "run": "full-e12-seed456",
+  "method": "full",
+  "seed": 456,
+  "checkpoint_sha256": "9e1b8fcc0324879f19d49a18b0a10776b531cb88ad14814b206a39ac69b1aaf2",
+  "selected_mrpc_dev_epoch": 5,
+  "status": "COMPLETE",
+  "split": "PAWS-Wiki labeled_final public test",
+  "rows": 8000,
+  "metrics": {
+    "accuracy": 0.442125,
+    "binary_f1": 0.6128892358400555,
+    "balanced_accuracy": 0.5000238205290387,
+    "mcc": 0.0008001947412957059,
+    "negative_recall": 0.0008960573476702509,
+    "positive_recall": 0.9991515837104072
+  },
+  "prediction_sha256": "dff7c58292811cb6d80bbcd9eda7905dd460a45c825a12995edb1fc3dd18f67d",
+  "data_sha256": "ae342ff12bb84b84b95f468abf5db6cb7c7bd578271299fe9c99be75b8132f4d",
+  "evaluator_sha256": "b0de9bc567ddf4d4ab4d7c8eb7ff22e053ec5feda7bd9fd7caa33c8bc85d5413",
+  "selection": "Frozen before stress inference; MRPC internal development only",
+  "no_paws_training": true,
+  "wall_seconds": 17.161908351998136
+}

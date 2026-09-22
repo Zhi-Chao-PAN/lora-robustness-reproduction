@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-09-22T17:41:11.796649+00:00",
+  "scope": "Data transport replacement only; same predeclared PAWS-Wiki labeled_final test, methods/seeds/selection unchanged",
+  "reason": "Original public GCS archive returned HTTP403; use fixed Google Research Datasets Hugging Face mirror",
+  "mirror_repository": "google-research-datasets/paws",
+  "mirror_revision": "161ece9501cf0a11f3e48bd356eaa82de46d6a09",
+  "test_sha256": "ae342ff12bb84b84b95f468abf5db6cb7c7bd578271299fe9c99be75b8132f4d",
+  "made_before_any_paws_model_evaluation": true,
+  "stress_script_sha256": "b0de9bc567ddf4d4ab4d7c8eb7ff22e053ec5feda7bd9fd7caa33c8bc85d5413"
+}

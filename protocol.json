@@ -1,0 +1,135 @@
+{
+  "version": "2.0",
+  "frozen_before_training": true,
+  "research_question": "After correcting tokenization, how do training budget and parameterization affect MRPC performance and zero-shot robustness on PAWS-Wiki?",
+  "paper": "https://arxiv.org/abs/2106.09685",
+  "upstream_lora_commit": "c4593f060e6a368d7bb5af5273b8e42810cdef90",
+  "model": "FacebookAI/roberta-base",
+  "model_revision": "e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+  "dataset": "nyu-mll/glue",
+  "dataset_revision": "bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c",
+  "dataset_config": "mrpc",
+  "split_policy": "Stratified 80/20 split of official train with seed 20260923; train subset for gradients, internal development subset for epoch selection; official 408-row validation only for final evaluation. Official test is not downloaded.",
+  "split_seed": 20260923,
+  "internal_dev_fraction": 0.2,
+  "selection": "Highest internal-development F1, then accuracy, then earliest epoch; no validation-based parameter tuning",
+  "primary_seeds": [
+    42,
+    123,
+    456
+  ],
+  "primary_methods": [
+    "head",
+    "full",
+    "lora_r8"
+  ],
+  "diagnostic_ablations": [
+    {
+      "method": "lora_r2",
+      "seed": 42,
+      "epochs": 12
+    },
+    {
+      "method": "lora_r16",
+      "seed": 42,
+      "epochs": 12
+    }
+  ],
+  "epochs": 12,
+  "max_length": 128,
+  "micro_batch_size": 8,
+  "gradient_accumulation": 4,
+  "effective_batch_size": 32,
+  "optimizer": "AdamW",
+  "learning_rates": {
+    "head": 0.001,
+    "full": 2e-05,
+    "lora": 0.0004
+  },
+  "weight_decay": 0.1,
+  "weight_decay_exclusions": [
+    "bias",
+    "LayerNorm.weight"
+  ],
+  "warmup_ratio": 0.06,
+  "schedule": "linear warmup then linear decay",
+  "gradient_clip_norm": 1.0,
+  "lora_target_modules": [
+    "query",
+    "value"
+  ],
+  "lora_alpha_per_rank": 2,
+  "lora_dropout": 0.0,
+  "lora_trainable": "Low-rank matrices and full classification head; encoder weights and biases frozen",
+  "lora_merge_weights": false,
+  "head_baseline": "Frozen encoder in eval mode; cached first-token features; train the original dense/tanh/dropout classification head",
+  "precision": "float32 master parameters with bfloat16 autocast on CUDA",
+  "metrics": [
+    "accuracy",
+    "binary_f1",
+    "trainable_parameter_count",
+    "peak_torch_cuda_allocated_bytes",
+    "wall_seconds"
+  ],
+  "resource_budget": {
+    "gpu": 1,
+    "torch_cpu_threads": 4,
+    "per_run_timeout_seconds": 1500
+  },
+  "limits": [
+    "Method reproduction and controlled extension, not reproduction of all original paper tables",
+    "Internal train/development split further reduces gradient-training examples; three training seeds rather than the original five",
+    "Method learning rates are fixed before results, not exhaustively tuned; conclusions apply to this budget and protocol",
+    "Public validation is not a private held-out test; performance does not prove real-world generalization",
+    "Rank ablations use one seed and are diagnostic only",
+    "Elapsed times include method-specific operations and are not a controlled hardware benchmark",
+    "Corrected 4 and 12 epoch schedules are separate training runs; longer-run early epochs are not claimed identical to the 4-epoch schedule",
+    "PAWS is a public out-of-distribution stress test and is not used for checkpoint or hyperparameter selection",
+    "V3 validation outcomes were already observed; all MRPC extensions are explicitly exploratory",
+    "Primary ranks remain r8; r2/r16 diagnostics are single-seed only"
+  ],
+  "phase": "Post-v3 corrective and exploratory experiment; MRPC validation previously observed",
+  "budget_epochs": [
+    4,
+    12
+  ],
+  "tokenizer": "AutoTokenizer.from_pretrained local pinned assets; all-row equality to tokenizers.Tokenizer.from_file(tokenizer.json)",
+  "primary_run_count": 18,
+  "stress_evaluation": {
+    "dataset": "PAWS-Wiki Labeled Final",
+    "split": "test",
+    "expected_rows": 8000,
+    "url": "https://storage.googleapis.com/paws/english/paws_wiki/labeled_final.tar.gz",
+    "training_on_paws": false,
+    "selected_models": "full and lora_r8, 12 epochs, all three seeds; internal MRPC development checkpoint selection only",
+    "primary_stress_metric": "balanced_accuracy",
+    "other_metrics": [
+      "accuracy",
+      "binary_f1",
+      "negative_recall",
+      "positive_recall",
+      "MCC"
+    ]
+  },
+  "planned_repeat": {
+    "method": "lora_r8",
+    "seed": 42,
+    "epochs": 4
+  },
+  "error_analysis": {
+    "mrpc_strata": [
+      "gold label",
+      "normalized lexical Jaccard bands [0,.5), [.5,.8), [.8,1]",
+      "correct-tokenizer length <=64,65-128,>128"
+    ],
+    "bootstrap_samples": 2000,
+    "bootstrap_seed": 20260923,
+    "scope": "Paired query bootstrap within each paired training seed; three-seed SD reported separately; no claims of population equivalence"
+  },
+  "correction": {
+    "v3_tokenization": "legacy RobertaTokenizerFast resolved to a backend with zero BPE merges in transformers 5.15.1; input was character-segmented",
+    "v3_result_scope": "Valid arithmetic on malformed inputs, not valid standard RoBERTa/LoRA task results; replaced for application use",
+    "training_math": "same optimizer, batch, precision, split, classifier initialization, targets and method LRs as v3; only input path corrected for 4-epoch matched comparisons"
+  },
+  "frozen_at": "2026-09-22T17:24:59.893064+00:00"
+}

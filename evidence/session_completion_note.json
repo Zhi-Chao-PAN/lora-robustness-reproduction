@@ -1,0 +1,9 @@
+{
+  "outer_exec_session": 64395,
+  "observed_exit_code_when_reaped": 143,
+  "outer_wrapper_clean_zero_exit_not_claimed": true,
+  "completed_run_exports": 21,
+  "evidence": "run_suite writes each COMPLETE export only after its subprocess.run(check=True) returns. All 21 exports and final COMPLETE log line exist; all original checkpoints were independently hash-verified. Scientific and export validation are separate gates.",
+  "wrapper_signal_cause": "Not independently determined",
+  "scope": "Retained execution irregularity, not a substitute for result verification."
+}

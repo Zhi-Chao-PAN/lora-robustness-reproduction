@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "transformers": "5.15.1",
+  "tokenizers": "0.22.2",
+  "tokenizer_asset_sha256": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e",
+  "splits": {
+    "train": {
+      "rows": 3668,
+      "all_fixed_rows_equal_raw_asset": true,
+      "mismatched_legacy_rows": 3668,
+      "fixed": {
+        "over_128": 0,
+        "length_median": 54.0,
+        "length_max": 104,
+        "unique_tokens": 14765
+      },
+      "legacy": {
+        "over_128": 3391,
+        "length_median": 195.0,
+        "length_max": 381,
+        "unique_tokens": 96
+      },
+      "fixed_encodings_sha256": "12eb0cf42ab31643f5c754c9c68893821c9a1fd9f10934ee86618d7b09c30ae5"
+    },
+    "validation": {
+      "rows": 408,
+      "all_fixed_rows_equal_raw_asset": true,
+      "mismatched_legacy_rows": 408,
+      "fixed": {
+        "over_128": 0,
+        "length_median": 54.0,
+        "length_max": 84,
+        "unique_tokens": 4359
+      },
+      "legacy": {
+        "over_128": 380,
+        "length_median": 195.0,
+        "length_max": 350,
+        "unique_tokens": 89
+      },
+      "fixed_encodings_sha256": "c7e982d733f2c2054cec7eed373ea87fb17153588fe8e51c43eb17d942ed0e4c"
+    }
+  },
+  "probe": {
+    "text": "The quick brown fox jumps over the lazy dog.",
+    "legacy_ids": [
+      0,
+      565,
+      298,
+      242,
+      1343,
+      257,
+      118,
+      438,
+      330,
+      428,
+      338,
+      139,
+      605,
+      282,
+      506,
+      139,
+      1178,
+      267,
+      257,
+      119,
+      642,
+      29,
+      139,
+      705,
+      242,
+      338,
+      90,
+      298,
+      242,
+      462,
+      102,
+      329,
+      219,
+      417,
+      139,
+      571,
+      4,
+      2
+    ],
+    "fixed_ids": [
+      0,
+      133,
+      2119,
+      6219,
+      23602,
+      13855,
+      81,
+      5,
+      22414,
+      2335,
+      4,
+      2
+    ],
+    "legacy_decoded": "<s> T h e q u i c k b r o w n f o x j u m p s o v e r t h e l a z y d o g . </s>",
+    "fixed_decoded": "<s>The quick brown fox jumps over the lazy dog.</s>"
+  },
+  "backend_merges": {
+    "legacy": 0,
+    "fixed": 50000
+  }
+}

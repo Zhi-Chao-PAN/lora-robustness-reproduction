@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-09-22T17:29:21.551414+00:00",
+  "phase": "before corrected training",
+  "sha256": {
+    "run_experiment.py": "9fbb40667f46e16baefae665ea7255ca3da181edf69f7456804954ebd7fa677d",
+    "run_suite.py": "84d98ff044d4c43fb645bf5429259e2f48466aef7a1df28f6d302bbdb20f0985",
+    "tokenization.py": "d1416c423f2581aacc9613c4727a9a4debe1d7fbfc2e3384f034ccfd50bbd55c",
+    "audit_tokenization.py": "5d5d0493defcfada908eead1baf42381fde78929535351a9556190d7ed0579ff",
+    "protocol.json": "4d4222ab05d6642b1b2405ea1cba50da5b0ff384028f79965d3b5055d9870974",
+    "requirements-lock.txt": "67b44926c06d32ad1b83472f98e98d4bbcfbd6ea202b5ba92e918b1b25ed0fd7",
+    "asset_manifest.json": "265c6942b8b5419bb7bef0517eb7733950e03754052d8e2ce42374d5bcb8a906",
+    "tokenization_audit.json": "477064be0930cc565da6cc1f7efdfbc3322089c1b048c335d0975815fdb5cc84",
+    "implementation_checks.json": "b0843b463934225e51740865781dbd308aa6c741a827685d9249967c471f2e08",
+    "check_implementation.py": "62ec474d1ce60897270b1f7ce98dd59ee21d17420f8234ee82c626aea3ae667d",
+    "vendor/LICENSE.md": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+    "vendor/loralib/__init__.py": "df9ca7e519d0bbe03679eac45ed00d9b99d0434d106dcdd2b600765b99192027",
+    "vendor/loralib/layers.py": "ea9fa6bd0930dfbf5af08440f6c71aeab3408cf07d3cca7620c86c45ea730797",
+    "vendor/loralib/utils.py": "9cd157527f79d48cf6f5feb7eb87509696e5f3cbb38862a633239e464eacaa71"
+  }
+}

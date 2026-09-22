@@ -1,0 +1,21 @@
+.venv/
+.audit-venv/
+assets/
+paws-data/
+runtime-replay/
+experiments-replay/
+analysis-replay/
+replay-*.json
+*.partial
+__pycache__/
+*.py[cod]
+
+# Large or third-party artifacts must not be committed.
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.parquet
+*.npz
+*predictions.jsonl
+

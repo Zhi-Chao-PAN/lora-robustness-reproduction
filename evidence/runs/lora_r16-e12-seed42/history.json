@@ -1,0 +1,110 @@
+[
+  {
+    "epoch": 1,
+    "training_loss": 0.6333477953582209,
+    "dev": {
+      "accuracy": 0.7084468664850136,
+      "binary_f1": 0.8189509306260575
+    },
+    "training_seconds": 21.472687876004784
+  },
+  {
+    "epoch": 2,
+    "training_loss": 0.4942679243402247,
+    "dev": {
+      "accuracy": 0.832425068119891,
+      "binary_f1": 0.8763819095477386
+    },
+    "training_seconds": 42.827240882004844
+  },
+  {
+    "epoch": 3,
+    "training_loss": 0.3722793929172196,
+    "dev": {
+      "accuracy": 0.8501362397820164,
+      "binary_f1": 0.892578125
+    },
+    "training_seconds": 64.1172309350004
+  },
+  {
+    "epoch": 4,
+    "training_loss": 0.3049301703770955,
+    "dev": {
+      "accuracy": 0.840599455040872,
+      "binary_f1": 0.8851815505397449
+    },
+    "training_seconds": 85.13612616600585
+  },
+  {
+    "epoch": 5,
+    "training_loss": 0.2433460430758253,
+    "dev": {
+      "accuracy": 0.8474114441416893,
+      "binary_f1": 0.8912621359223301
+    },
+    "training_seconds": 106.10250178800197
+  },
+  {
+    "epoch": 6,
+    "training_loss": 0.2375767689195716,
+    "dev": {
+      "accuracy": 0.8392370572207084,
+      "binary_f1": 0.8869731800766284
+    },
+    "training_seconds": 127.03679298900533
+  },
+  {
+    "epoch": 7,
+    "training_loss": 0.16861166507919872,
+    "dev": {
+      "accuracy": 0.8419618528610354,
+      "binary_f1": 0.8837675350701403
+    },
+    "training_seconds": 148.07099469800596
+  },
+  {
+    "epoch": 8,
+    "training_loss": 0.15522399469548842,
+    "dev": {
+      "accuracy": 0.8351498637602179,
+      "binary_f1": 0.881488736532811
+    },
+    "training_seconds": 169.30509825700574
+  },
+  {
+    "epoch": 9,
+    "training_loss": 0.12184988261386498,
+    "dev": {
+      "accuracy": 0.837874659400545,
+      "binary_f1": 0.8836754643206256
+    },
+    "training_seconds": 190.70350674400106
+  },
+  {
+    "epoch": 10,
+    "training_loss": 0.11208310083385516,
+    "dev": {
+      "accuracy": 0.8365122615803815,
+      "binary_f1": 0.8818897637795275
+    },
+    "training_seconds": 211.70212460900075
+  },
+  {
+    "epoch": 11,
+    "training_loss": 0.08786005395256369,
+    "dev": {
+      "accuracy": 0.837874659400545,
+      "binary_f1": 0.8820614469772051
+    },
+    "training_seconds": 232.68441861800238
+  },
+  {
+    "epoch": 12,
+    "training_loss": 0.07785949039850042,
+    "dev": {
+      "accuracy": 0.837874659400545,
+      "binary_f1": 0.8822947576656776
+    },
+    "training_seconds": 253.76494779800123
+  }
+]
