@@ -1,0 +1,14 @@
+Downloading config.json
+Saved config.json 481
+Downloading model.safetensors
+Saved model.safetensors 498818054
+Downloading tokenizer.json
+Saved tokenizer.json 1355863
+Downloading merges.txt
+Saved merges.txt 456318
+Downloading vocab.json
+Saved vocab.json 898823
+Downloading train-00000-of-00001.parquet
+Saved train-00000-of-00001.parquet 649281
+Downloading validation-00000-of-00001.parquet
+Saved validation-00000-of-00001.parquet 75678

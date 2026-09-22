@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "rows_checked": {
+    "train": 2934,
+    "dev": 734,
+    "validation": 408
+  },
+  "total_rows": 4076,
+  "input_ids_attention_masks_and_labels_identical_to_independent_source": true,
+  "all_split_pair_overlaps_zero": true,
+  "tokenized_sha256": "5460bcde8a044366baa2b0e5fbe2bb59c47e7fa42f8878de122bd6d650f621f1"
+}
