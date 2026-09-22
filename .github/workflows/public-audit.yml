@@ -22,3 +22,5 @@ jobs:
         run: python verify_public_bundle.py
       - name: Verify post-release source replay records
         run: python verify_public_source_replay.py
+      - name: Verify upstream-fetch single-run replay records
+        run: python verify_public_upstream_replay.py

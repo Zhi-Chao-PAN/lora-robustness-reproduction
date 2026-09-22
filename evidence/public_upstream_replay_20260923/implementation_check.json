@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "published_formula_max_abs_error": 0.0,
+  "base_parameters_receive_no_gradient": true,
+  "both_low_rank_factors_receive_gradient": true,
+  "base_weights_unchanged_after_step": true,
+  "zero_adapter_real_model_logits_identical": true,
+  "same_seed_classifier_initialization_identical": true,
+  "query_value_layers_adapted": 24,
+  "lora_r8_trainable_parameters": 887042
+}

@@ -4,7 +4,7 @@ This repository is an auditable research artifact for one bounded study: after
 correcting the RoBERTa input pipeline, how do training budget and
 parameterization affect MRPC performance and zero-shot behavior on PAWS-Wiki?
 
-[Public evidence audit](https://github.com/Zhi-Chao-PAN/lora-robustness-reproduction/actions/workflows/public-audit.yml) checks the published file hashes, aggregate evidence, and post-release single-run replay records on every push. It does not train in CI. The [post-release source replay](PUBLIC_SOURCE_REPLAY_2026-09-23.md) records one new same-machine, same-asset `lora_r8` seed-42 run whose 24 non-timing summary fields matched the archived run exactly.
+[Public evidence audit](https://github.com/Zhi-Chao-PAN/lora-robustness-reproduction/actions/workflows/public-audit.yml) checks the published file hashes, aggregate evidence, and two post-release single-run replay records on every push. It does not train in CI. The first [source replay](PUBLIC_SOURCE_REPLAY_2026-09-23.md) used retained, hash-verified assets; the later [upstream-fetch replay](PUBLIC_UPSTREAM_REPLAY_2026-09-23.md) ran from a new asset directory using the pinned public download script. Both were AI-agent runs on the same machine, and both matched the archived `lora_r8` seed-42 run on all 24 non-timing summary fields.
 
 The study covers an 18-run primary matrix (classification head, full fine
 tuning, and query/value LoRA-r8; 4 and 12 epochs; seeds 42, 123, and 456), two
@@ -44,15 +44,18 @@ does not include pretrained assets, raw datasets, prediction rows, or weights.
 ```bash
 python3 verify_public_bundle.py
 python3 verify_public_source_replay.py
+python3 verify_public_upstream_replay.py
 sha256sum -c SHA256SUMS
 ```
 
 The first command independently checks the run matrix, corrected-tokenizer
 guards, summary/analysis agreement for the headline MRPC and PAWS metrics,
 publication exclusions, local-path hygiene, and the Markdown links that point
-to local files. The second checks the published single-run replay records against
-the original summary, training trace, audits, and frozen source hashes. These
-are audits of the included evidence, not retraining.
+to local files. The next two commands check the published single-run replay
+records against the archived summary, their audits, and frozen source hashes.
+The upstream-fetch check also compares the local download observation to the
+fixed asset manifest and log, but cannot authenticate the network transfer or
+re-hash unpublished assets. These are audits of included evidence, not retraining.
 
 The detailed report is [reports/研究分析报告.md](reports/研究分析报告.md). JSON values
 used to generate it are in [reports/analysis.json](reports/analysis.json), and

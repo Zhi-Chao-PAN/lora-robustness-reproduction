@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-09-22T22:30:11.122324+00:00",
+  "source_commit": "38d40cc245d083be94d54771baeed21d5b8e00a7",
+  "asset_manifest_sha256": "265c6942b8b5419bb7bef0517eb7733950e03754052d8e2ce42374d5bcb8a906",
+  "prepare_assets_log_sha256": "3881132de0637d1beb934d436e1d9877af4542ffe4cb8a7e0df1e840a33e7a5b",
+  "fixed_vendor_file_count": 4,
+  "records": [
+    {
+      "path": "model/config.json",
+      "url": "https://huggingface.co/FacebookAI/roberta-base/resolve/e2da8e2f811d1448a5b465c236feacd80ffbac7b/config.json",
+      "sha256": "ef0185e2aae6e06c5f105a285006952c340e20c7dbf43c86ec82601b13fc45e9",
+      "bytes": 481,
+      "source": "agent_logged_fetch"
+    },
+    {
+      "path": "model/model.safetensors",
+      "url": "https://huggingface.co/FacebookAI/roberta-base/resolve/e2da8e2f811d1448a5b465c236feacd80ffbac7b/model.safetensors",
+      "sha256": "5bde1d28afb363d0103324efeb5afc8b2b397fe5e04beabb9b1ef355255ade81",
+      "bytes": 498818054,
+      "source": "agent_logged_fetch"
+    },
+    {
+      "path": "model/tokenizer.json",
+      "url": "https://huggingface.co/FacebookAI/roberta-base/resolve/e2da8e2f811d1448a5b465c236feacd80ffbac7b/tokenizer.json",
+      "sha256": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e",
+      "bytes": 1355863,
+      "source": "agent_logged_fetch"
+    },
+    {
+      "path": "model/merges.txt",
+      "url": "https://huggingface.co/FacebookAI/roberta-base/resolve/e2da8e2f811d1448a5b465c236feacd80ffbac7b/merges.txt",
+      "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "bytes": 456318,
+      "source": "agent_logged_fetch"
+    },
+    {
+      "path": "model/vocab.json",
+      "url": "https://huggingface.co/FacebookAI/roberta-base/resolve/e2da8e2f811d1448a5b465c236feacd80ffbac7b/vocab.json",
+      "sha256": "9e7f63c2d15d666b52e21d250d2e513b87c9b713cfa6987a82ed89e5e6e50655",
+      "bytes": 898823,
+      "source": "agent_logged_fetch"
+    },
+    {
+      "path": "data/train-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/nyu-mll/glue/resolve/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/mrpc/train-00000-of-00001.parquet",
+      "sha256": "61fd41301e0e244b0420c4350a170c8e7cf64740335fc875a4af2d79af0df0af",
+      "bytes": 649281,
+      "source": "agent_logged_fetch"
+    },
+    {
+      "path": "data/validation-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/nyu-mll/glue/resolve/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/mrpc/validation-00000-of-00001.parquet",
+      "sha256": "33c007dbf5bfa8463d87a13e6226df8c0fcf2596c2cd39d0f3bb79754e00f50f",
+      "bytes": 75678,
+      "source": "agent_logged_fetch"
+    },
+    {
+      "path": "vendor/loralib/__init__.py",
+      "url": "https://raw.githubusercontent.com/microsoft/LoRA/c4593f060e6a368d7bb5af5273b8e42810cdef90/loralib/__init__.py",
+      "sha256": "df9ca7e519d0bbe03679eac45ed00d9b99d0434d106dcdd2b600765b99192027",
+      "bytes": 57,
+      "source": "fixed_public_checkout"
+    },
+    {
+      "path": "vendor/loralib/layers.py",
+      "url": "https://raw.githubusercontent.com/microsoft/LoRA/c4593f060e6a368d7bb5af5273b8e42810cdef90/loralib/layers.py",
+      "sha256": "ea9fa6bd0930dfbf5af08440f6c71aeab3408cf07d3cca7620c86c45ea730797",
+      "bytes": 12651,
+      "source": "fixed_public_checkout"
+    },
+    {
+      "path": "vendor/loralib/utils.py",
+      "url": "https://raw.githubusercontent.com/microsoft/LoRA/c4593f060e6a368d7bb5af5273b8e42810cdef90/loralib/utils.py",
+      "sha256": "9cd157527f79d48cf6f5feb7eb87509696e5f3cbb38862a633239e464eacaa71",
+      "bytes": 1819,
+      "source": "fixed_public_checkout"
+    },
+    {
+      "path": "vendor/LICENSE.md",
+      "url": "https://raw.githubusercontent.com/microsoft/LoRA/c4593f060e6a368d7bb5af5273b8e42810cdef90/LICENSE.md",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141,
+      "source": "fixed_public_checkout"
+    }
+  ],
+  "prepare_assets_source_sha256": "465e038e318ed73855a118a6bb44ccaf46a103503263ac32496a21846e57c792",
+  "requirements_lock_sha256": "67b44926c06d32ad1b83472f98e98d4bbcfbd6ea202b5ba92e918b1b25ed0fd7",
+  "status_scope": "Local file size and SHA-256 equality to the frozen public manifest; no independent network attestation.",
+  "provenance_attestation": "Agent-generated local download log only.",
+  "agent_logged_download_count": 7
+}
