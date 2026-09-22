@@ -20,3 +20,5 @@ jobs:
         run: sha256sum -c SHA256SUMS
       - name: Recompute public aggregate checks
         run: python verify_public_bundle.py
+      - name: Verify post-release source replay records
+        run: python verify_public_source_replay.py
