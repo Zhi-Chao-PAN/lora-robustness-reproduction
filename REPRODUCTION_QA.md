@@ -11,3 +11,7 @@ We additionally ran the **published source files** against the retained original
 | `verify_public_bundle.py` | `PASS`; 21/21 run summaries, six PAWS stress summaries, no prohibited source rows or model assets in the public package | Aggregate-record and package audit, **not** raw prediction recomputation |
 
 This publication-time check did **not** retrain the 21 runs or independently download every upstream asset from the public README. The detailed frozen-result verification remains in the original local evidence package. Training outcomes depend on the recorded environment and data snapshot; a reviewer can attempt a fresh run with the README commands and upstream terms.
+
+## Post-release addendum
+
+After the fixed reviewer snapshot was published, one `lora_r8` seed-42 four-epoch run was trained from scratch using an unchanged copy of the published source and retained, hash-verified local assets. Its 24 non-timing summary fields matched the archived summary exactly. See [PUBLIC_SOURCE_REPLAY_2026-09-23.md](PUBLIC_SOURCE_REPLAY_2026-09-23.md) and run `python3 verify_public_source_replay.py` to audit the public records. This addendum does not change the tagged snapshot or the publication-time CI scope above; the new CI step checks the addendum offline without loading assets or training.

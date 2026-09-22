@@ -113,7 +113,7 @@ def main() -> int:
             errors.append(f"forbidden artifact included: {relative}")
         if path.stat().st_size > 5 * 1024 * 1024:
             errors.append(f"unexpected file over 5 MiB: {relative}")
-        if path.suffix.lower() in {".md", ".py", ".json", ".txt"}:
+        if path.suffix.lower() in {".md", ".py", ".json", ".jsonl", ".txt"}:
             text = path.read_text(encoding="utf-8", errors="replace")
             for line_number, line in enumerate(text.splitlines(), 1):
                 if ABSOLUTE_PATH.search(line):

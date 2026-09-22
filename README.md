@@ -4,7 +4,7 @@ This repository is an auditable research artifact for one bounded study: after
 correcting the RoBERTa input pipeline, how do training budget and
 parameterization affect MRPC performance and zero-shot behavior on PAWS-Wiki?
 
-[Public evidence audit](https://github.com/Zhi-Chao-PAN/lora-robustness-reproduction/actions/workflows/public-audit.yml) checks the published file hashes and aggregate evidence on every push.
+[Public evidence audit](https://github.com/Zhi-Chao-PAN/lora-robustness-reproduction/actions/workflows/public-audit.yml) checks the published file hashes, aggregate evidence, and post-release single-run replay records on every push. It does not train in CI. The [post-release source replay](PUBLIC_SOURCE_REPLAY_2026-09-23.md) records one new same-machine, same-asset `lora_r8` seed-42 run whose 24 non-timing summary fields matched the archived run exactly.
 
 The study covers an 18-run primary matrix (classification head, full fine
 tuning, and query/value LoRA-r8; 4 and 12 epochs; seeds 42, 123, and 456), two
@@ -43,13 +43,16 @@ does not include pretrained assets, raw datasets, prediction rows, or weights.
 
 ```bash
 python3 verify_public_bundle.py
+python3 verify_public_source_replay.py
 sha256sum -c SHA256SUMS
 ```
 
 The first command independently checks the run matrix, corrected-tokenizer
 guards, summary/analysis agreement for the headline MRPC and PAWS metrics,
 publication exclusions, local-path hygiene, and the Markdown links that point
-to local files. This is an audit of the included evidence, not a retraining.
+to local files. The second checks the published single-run replay records against
+the original summary, training trace, audits, and frozen source hashes. These
+are audits of the included evidence, not retraining.
 
 The detailed report is [reports/研究分析报告.md](reports/研究分析报告.md). JSON values
 used to generate it are in [reports/analysis.json](reports/analysis.json), and
