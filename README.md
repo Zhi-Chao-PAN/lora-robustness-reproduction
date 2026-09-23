@@ -4,6 +4,11 @@ This repository is an auditable research artifact for one bounded study: after
 correcting the RoBERTa input pipeline, how do training budget and
 parameterization affect MRPC performance and zero-shot behavior on PAWS-Wiki?
 
+The [English method-to-implementation note](method_note_en.md) identifies the
+LoRA update, adapted projections, data split, and differences from the authors'
+MRPC script. It also explains why the results are a bounded reproduction and
+extension rather than a numerical replication of every paper result.
+
 [Public evidence audit](https://github.com/Zhi-Chao-PAN/lora-robustness-reproduction/actions/workflows/public-audit.yml) checks the published file hashes, aggregate evidence, and two post-release single-run replay records on every push. It does not train in CI. The first [source replay](PUBLIC_SOURCE_REPLAY_2026-09-23.md) used retained, hash-verified assets; the later [upstream-fetch replay](PUBLIC_UPSTREAM_REPLAY_2026-09-23.md) ran from a new asset directory using the pinned public download script. Both were AI-agent runs on the same machine, and both matched the archived `lora_r8` seed-42 run on all 24 non-timing summary fields.
 
 The study covers an 18-run primary matrix (classification head, full fine
